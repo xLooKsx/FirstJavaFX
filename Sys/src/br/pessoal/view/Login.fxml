@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="294.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.pessoal.view.LoginController">
+   <children>
+      <TextField fx:id="txtUsuario" layoutX="57.0" layoutY="103.0" />
+      <PasswordField fx:id="pwSenha" layoutX="54.0" layoutY="173.0" />
+      <Button layoutX="154.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleOk" text="Entrar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="57.0" layoutY="86.0" text="Usuario" />
+      <Label layoutX="57.0" layoutY="146.0" text="Senha" />
+      <Text layoutX="64.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblInfo" layoutX="54.0" layoutY="208.0" prefHeight="17.0" prefWidth="149.0" />
+      <Label layoutX="57.0" layoutY="225.0" onMouseClicked="#handleRecuperarSenha" text="Esqueceu a senha?" textFill="#4751ad" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

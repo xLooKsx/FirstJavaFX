@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.pessoal.view.EditarDadosController">
+   <children>
+      <Text layoutX="248.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editar Dados">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <Pane fx:id="panelUsuario" layoutX="14.0" layoutY="57.0" prefHeight="71.0" prefWidth="576.0">
+         <children>
+            <Text layoutX="14.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mudar Usuario">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNomeUsuario" layoutX="106.0" layoutY="25.0" />
+            <Label layoutX="25.0" layoutY="29.0" text="Novo usuario:" />
+         </children>
+      </Pane>
+      <Pane fx:id="panelSenha" layoutX="12.0" layoutY="159.0" prefHeight="195.0" prefWidth="576.0">
+         <children>
+            <Text layoutX="14.0" layoutY="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mudar Senha">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <Label layoutX="33.0" layoutY="26.0" text="Senha antiga:" />
+            <Label layoutX="33.0" layoutY="66.0" text="Nova senha:" />
+            <Label layoutX="33.0" layoutY="113.0" text="Confirmação da nova senha:" />
+            <PasswordField fx:id="pwSenhaAntiga" layoutX="108.0" layoutY="22.0" />
+            <PasswordField fx:id="pwNovaSenha" layoutX="108.0" layoutY="62.0" />
+            <PasswordField fx:id="pwConfirmaNovaSenha" layoutX="183.0" layoutY="109.0" />
+         </children>
+      </Pane>
+      <HBox layoutX="472.0" layoutY="361.0" spacing="10.0">
+         <children>
+            <Button layoutX="472.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSalvar" text="Salvar" />
+            <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleCancelar" text="Cancelar" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
